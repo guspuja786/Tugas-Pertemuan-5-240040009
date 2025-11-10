@@ -1,0 +1,108 @@
+/* Gaya umum halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: 
+        linear-gradient(rgba(0, 34, 114, 0.756), rgba(6, 1, 64, 0.76)),
+        url('gambar.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Judul halaman */
+.Judul {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Judul h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.Judul h3 {
+    font-weight: normal;
+}
+
+/* Gaya untuk form */
+form {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Judul form */
+form h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Label dan input */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat input fokus */
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Tombol daftar */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    .Judul h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
